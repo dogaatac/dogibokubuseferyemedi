@@ -17,3 +17,6 @@ cd
 git clone https://github.com/dogaatac/dogibokubuseferyemedi.git
 screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5115 --verbose
 screen -dmS online python3 online.py
+
+
+
