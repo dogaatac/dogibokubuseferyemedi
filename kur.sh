@@ -24,6 +24,7 @@ cargo build -p tig-worker --release
 cd tig-benchmarker
 pip3 install -r requirements.txt
 pip3 install psutil
+pip install requests
 cd
 cd dogibokubuseferyemedi
 screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5115 --verbose
