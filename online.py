@@ -15,11 +15,11 @@ while True:
     try:
         response = requests.post(A_SERVER_URL, json={"server_id": SERVER_ID})
         if response.status_code == 200:
-            print("Heartbeat gönderildi.")
+            print(f"Heartbeat gönderildi: {SERVER_ID}")
         else:
             print("Heartbeat gönderilirken hata oluştu.")
     except Exception as e:
         print(f"Hata: {e}")
 
-    # 5 dakika bekle
-    time.sleep(360)
+    # 1 dakika bekle
+    time.sleep(60)
