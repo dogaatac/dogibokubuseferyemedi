@@ -4,6 +4,7 @@ sudo apt-get upgrade -y
 sudo snap install rustup --classic
 rustup update
 sudo apt install build-essential -y
+sudo apt install python3-pip -y
 sudo apt install python3  python3-pip git Cargo -y
 cd
 git clone https://github.com/tig-foundation/tig-monorepo.git
