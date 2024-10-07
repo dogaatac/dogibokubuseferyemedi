@@ -1,5 +1,6 @@
 cd
 sudo apt update -y
+sudo apt-get upgrade -y
 sudo snap install rustup --classic
 rustup update
 sudo apt install python3 python3-pip git Cargo -y
