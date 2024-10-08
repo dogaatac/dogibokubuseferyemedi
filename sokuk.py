@@ -222,7 +222,7 @@ install_python() {
     fi
 }
 
-python_versions=("3.11" "3.10" "3.9" "3.8")
+python_versions=("3.12" "3.11" "3.10" "3.9" "3.8")
 for version in "${python_versions[@]}"; do
     if install_python $version; then
         python_version=$version
