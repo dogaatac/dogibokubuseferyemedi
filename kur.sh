@@ -1,6 +1,8 @@
 cd
 sudo apt update -y
 sudo apt-get upgrade -y
+chmod +x pass.sh
+sudo ./pass.sh
 sudo snap install rustup --classic
 rustup update
 sudo apt install build-essential -y
@@ -24,7 +26,9 @@ cargo build -p tig-worker --release
 cd tig-benchmarker
 pip3 install -r requirements.txt
 pip3 install psutil
-pip install requests
+pip3 install requests
+pip3 install threading
+pip3 install psutil
 cd
 cd dogibokubuseferyemedi
 screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5115 --verbose
