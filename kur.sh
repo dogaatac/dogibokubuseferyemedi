@@ -15,7 +15,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python3  python3-pip git Cargo -y
 cd
-git clone https://github.com/tig-foundation/tig-monorepo.git
+git clone --branch benchmarker_update https://github.com/tig-foundation/tig-monorepo.git
 cd tig-monorepo
 rustup default 1.81.0
 sudo apt remove rustc -y
@@ -33,8 +33,6 @@ cd
 cd dogibokubuseferyemedi
 screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5115 --verbose
 screen -dmS online python3 online.py
-screen -dmS nproc python3 cpu.py
-
 
 
 
