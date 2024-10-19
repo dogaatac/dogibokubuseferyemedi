@@ -31,7 +31,7 @@ pip3 install threading
 pip3 install psutil
 cd
 cd dogibokubuseferyemedi
-screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5115 --verbose
+screen -dmS kole python3 calis.py 213.199.52.11 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5116 --verbose
 screen -dmS online python3 online.py
 
 
