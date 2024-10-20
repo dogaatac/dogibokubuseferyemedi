@@ -3,7 +3,7 @@ import time
 import random
 import string
 
-A_SERVER_URL = "http://213.199.52.11:5002/heartbeat"  # Ana sunucunun IP adresini girin
+A_SERVER_URL = "http://188.245.182.52:5002/heartbeat"  # Ana sunucunun IP adresini girin
 
 # Rastgele server ID oluşturma
 def generate_server_id():
