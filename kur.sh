@@ -34,7 +34,8 @@ cd tig-monorepo/tig-benchmarker/
 screen -dmS kole python3 slave.py 188.245.182.52 /root/tig-monorepo/target/release/tig-worker --download wasms --port 5117 --verbose --workers 32
 cd
 cd dogibokubuseferyemedi
-screen -dmS online python3 online.py
+screen -S online
+python3 online.py
 
 
 
