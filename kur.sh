@@ -1,6 +1,8 @@
 cd
 sudo apt update -y
 sudo apt-get upgrade -y
+sudo apt install clang llvm lld libclang-dev -y
+sudo apt install cmake build-essential -y
 sudo snap install rustup --classic
 rustup update
 sudo apt install build-essential -y
