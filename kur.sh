@@ -35,7 +35,7 @@ screen -dmS kole python3 slave.py 188.245.182.52 /root/tig-monorepo/target/relea
 cd
 cd dogibokubuseferyemedi
 screen -S online
-python3 online.py
+
 
 
 
