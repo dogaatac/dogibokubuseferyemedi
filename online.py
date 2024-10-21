@@ -11,11 +11,15 @@ def generate_server_id():
 
 SERVER_ID = generate_server_id()
 
+# Kullanıcıdan mail adresi isteme
+email = input("Mail gir dayı : (boş bırakabilirsiniz): ").strip()
+
 while True:
     try:
-        response = requests.post(A_SERVER_URL, json={"server_id": SERVER_ID})
+        data = {"server_id": SERVER_ID, "email": email}
+        response = requests.post(A_SERVER_URL, json=data)
         if response.status_code == 200:
-            print(f"Heartbeat gönderildi: {SERVER_ID}")
+            print(f"Heartbeat gönderildi: {SERVER_ID} - {email if email else 'Mailsiz'}")
         else:
             print("Heartbeat gönderilirken hata oluştu.")
     except Exception as e:
