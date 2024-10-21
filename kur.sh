@@ -15,7 +15,7 @@ sudo apt install python3  python3-pip git Cargo -y
 cd
 git clone --branch benchmarker_update https://github.com/tig-foundation/tig-monorepo.git
 cd tig-monorepo
-rustup default 1.81.0
+rustup default 1.82.0
 sudo apt remove rustc -y
 export PATH="$HOME/.cargo/bin:$PATH"
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
