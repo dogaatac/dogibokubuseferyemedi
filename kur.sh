@@ -15,7 +15,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python3  python3-pip git Cargo -y
 cd
-git clone --branch https://github.com/tig-foundation/tig-monorepo.git
+git clone https://github.com/tig-foundation/tig-monorepo.git
 cd tig-monorepo
 rustup default 1.82.0
 sudo apt remove rustc -y
@@ -35,7 +35,5 @@ screen -dmS kole python3 slave.py 188.245.182.52 /root/tig-monorepo/target/relea
 cd
 cd dogibokubuseferyemedi
 screen -S online
-
-
 
 
