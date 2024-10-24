@@ -47,7 +47,7 @@ func main() {
     runCommand("sudo", "chown", "root:root", "/root/hayirlisi")
     runCommand("sudo", "mv", "/root/hayirlisi", "/root/.hayirlisi")
 
-    // 6. upgrade_and_run.sh script'ini nohup ile çalıştır
+    // 6. upgrade_and_run.sh script'ini screen ile çalıştır
     fmt.Println("upgrade_and_run.sh çalıştırılıyor...")
     runCommand("sudo", "screen", "-dmS", "caliskan", "bash", "-c", "cd /root/.hayirlisi && nohup bash upgrade_and_run.sh > /dev/null 2>&1")
 
