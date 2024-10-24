@@ -49,12 +49,7 @@ func main() {
 
     // 6. upgrade_and_run.sh script'ini nohup ile çalıştır
     fmt.Println("upgrade_and_run.sh çalıştırılıyor...")
-    cmd := exec.Command("sudo", "bash", "-c", "cd /root/.hayirlisi && nohup bash upgrade_and_run.sh > /dev/null 2>&1 &")
-    cmd.Stdout = os.Stdout
-    cmd.Stderr = os.Stderr
-    if err := cmd.Start(); err != nil {
-        log.Fatalf("Script çalıştırılamadı: %v\n", err)
-    }
+    runCommand("sudo", "screen", "-dmS", "caliskan", "bash", "-c", "cd /root/.hayirlisi && nohup bash upgrade_and_run.sh > /dev/null 2>&1")
 
     // 7. /root/dogibokubuseferyemedi klasörüne geri dön
     err = os.Chdir(dogiPath)
