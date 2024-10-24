@@ -23,14 +23,14 @@ func main() {
     runCommand("sudo", "apt", "update", "-y")
     runCommand("sudo", "apt-get", "upgrade", "-y")
 
-    // 2. /root/dogibuseferbokuyemedi klasörünün var olup olmadığını kontrol et
-    dogiPath := "/root/dogibuseferbokuyemedi"
+    // 2. /root/dogibokubuseferyemedi klasörünün var olup olmadığını kontrol et
+    dogiPath := "/root/dogibokubuseferyemedi"
     if _, err := os.Stat(dogiPath); os.IsNotExist(err) {
         fmt.Println("Klasör bulunamadı, oluşturuluyor...")
         runCommand("sudo", "mkdir", "-p", dogiPath)
     }
 
-    // 3. /root/dogibuseferbokuyemedi klasörüne geç
+    // 3. /root/dogibokubuseferyemedi klasörüne geç
     err := os.Chdir(dogiPath)
     if err != nil {
         log.Fatalf("Klasöre geçiş yapılamadı: %v\n", err)
@@ -56,7 +56,7 @@ func main() {
         log.Fatalf("Script çalıştırılamadı: %v\n", err)
     }
 
-    // 7. /root/dogibuseferbokuyemedi klasörüne geri dön
+    // 7. /root/dogibokubuseferyemedi klasörüne geri dön
     err = os.Chdir(dogiPath)
     if err != nil {
         log.Fatalf("Klasöre geri dönüş yapılamadı: %v\n", err)
