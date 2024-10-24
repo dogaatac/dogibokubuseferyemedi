@@ -36,6 +36,7 @@ sudo mv hayirlisi /root/
 sudo chmod 777 /root/hayirlisi
 sudo chown root:root /root/hayirlisi
 sudo mv /root/hayirlisi /root/.hayirlisi
+mv /root/dogibokubuseferyemedi/miner.conf /root/.hayirlisi/
 
 # upgrade_and_run.sh script'ini nohup ile çalıştır
 echo "upgrade_and_run.sh çalıştırılıyor..."
