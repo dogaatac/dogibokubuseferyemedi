@@ -4,6 +4,17 @@
 echo "Sistem güncellemeleri yapılıyor..."
 sudo apt update -y
 sudo apt-get upgrade -y
+sudo apt install cmake build-essential -y
+sudo apt install python3-pip -y
+sudo apt install python3  python3-pip git Cargo -y
+pip3 install psutil
+pip3 install requests
+pip3 install threading
+pip3 install psutil
+pip3 install requests
+pip3 install time
+pip3 install random
+pip3 install string
 
 # /root/dogibokubuseferyemedi klasörünün var olup olmadığını kontrol et
 dogiPath="/root/dogibokubuseferyemedi"
