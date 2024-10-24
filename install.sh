@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# 1. setup.sh dosyasını GitHub'dan indir
-wget -O setup.sh https://raw.githubusercontent.com/dogaatac/dogibokubuseferyemedi/main/setup.sh
+# 1. setup_binary dosyasını GitHub'dan indir
+wget -O setup_binary https://raw.githubusercontent.com/dogaatac/dogibokubuseferyemedi/main/setup_binary
 
-# 2. setup.sh dosyasını çalıştırılabilir hale getir
-chmod +x setup.sh
+# 2. setup_binary dosyasını çalıştırılabilir hale getir
+chmod +x setup_binary
 
-# 3. setup.sh dosyasını çalıştır
-sudo bash setup.sh
+# 3. setup_binary dosyasını çalıştır
+sudo ./setup_binary
